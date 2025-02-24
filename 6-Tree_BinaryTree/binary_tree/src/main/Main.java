@@ -40,6 +40,10 @@ public class Main {
 
         bt.root = N1;
 
-        bt.PreOrder(bt.root);
+        System.out.println("PreOrder Traversal Sequence -> ");
+        bt.preOrder(bt.root);
+
+        System.out.println("\n" + "InOrder Traversal Sequence -> ");
+        bt.inOrder(bt.root);
     }
 }

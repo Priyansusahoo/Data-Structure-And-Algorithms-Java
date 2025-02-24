@@ -9,13 +9,24 @@ public class BinaryTreeLL {
     }
 
     // PreOrder Traversal
-    public void PreOrder(BinaryNode node){ // TC -> O(N) ; SC -> O(N)
+    public void preOrder(BinaryNode node){ // TC -> O(N) ; SC -> O(N)
         if (node == null) { // TC -> O(1)
             return; // TC -> O(1)
         }
         System.out.print(node.value + " "); // TC -> O(1)
 
-        PreOrder(node.left); // TC -> O(N/2)
-        PreOrder(node.right); // TC -> O(N/2)
+        preOrder(node.left); // TC -> O(N/2)
+        preOrder(node.right); // TC -> O(N/2)
+    }
+
+    // InOrder Traversal
+    public void inOrder(BinaryNode node) { // TC -> O(N) ; SC -> O(N)
+        if(node == null) { // TC -> O(1)
+            return; // TC -> O(1)
+        }
+
+        inOrder(node.left); // TC -> O(N/2)
+        System.out.print(node.value + " "); // TC -> O(1)
+        inOrder(node.right); // TC -> O(N/2)
     }
 }
