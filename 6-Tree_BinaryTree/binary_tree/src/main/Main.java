@@ -45,5 +45,8 @@ public class Main {
 
         System.out.println("\n" + "InOrder Traversal Sequence -> ");
         bt.inOrder(bt.root);
+
+        System.out.println("\n" + "PostOrder Traversal Sequence -> ");
+        bt.postOrder(bt.root);
     }
 }

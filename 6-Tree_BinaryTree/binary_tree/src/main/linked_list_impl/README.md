@@ -6,11 +6,11 @@
     - Traverse all nodes
     - Deletion of Tree
 
-#### Binary Tree - Traversal
+#### Binary Tree - Traversal (BinaryTreeLL.java)
     - Depth First Search
         - Preorder Traversal // Root Node -> Left SubTree -> Right SubTree
-        - Inorder Traversal // left node -> root node -> right node
-        - Post order Traversal
+        - Inorder Traversal // left-subtree node -> root node -> right-subtree node
+        - Postorder Traversal // left-subtree node -> right-subtree node -> root node
     
     - Breadth First Search
         - Level order Traversal
@@ -25,10 +25,10 @@
 
         N1 -> N2 -> N4 -> N8 -> N9 -> N5 -> N3 -> N6 -> N7
 
-![alt text](images/PreOrderTraversalBTLL-After.png)
+<img src="images/PreOrderTraversalBTLL-After.png" alt="PreOrderTraversalInBT" style="max-width: 50%; max-height: 500px; height: auto;">
 
 ### Binary Tree - InOrder Traversal
-    - left node -> root node -> right node
+    - left-subtree node -> root node -> right-subtree node
 
 ![alt text](images/BTLL.png)
 
@@ -36,4 +36,15 @@
 
         N8 -> N4 -> N9 -> N2 -> N5 -> N1 -> N6 -> N3 -> N7
 
-![alt text](images/InOrderTraversalBTLL.png)
+<img src="images/InOrderTraversalBTLL.png" alt="InOrderTraversalInBT" style="max-width: 50%; max-height: 500px; height: auto;">
+
+### Binary Tree - PostOrder Traversal
+    -  left-subtree node -> right-subtree node -> root node
+
+![alt text](images/BTLL.png)
+
+    - Traversal Sequence:
+
+        N8 -> N9 -> N4 -> N5 -> N2 -> N6 -> N7 -> N3 -> N1
+    
+<img src="images/PostOrderTraversalBTLL.png" alt="PostOrderTraversalInBT" style="max-width: 50%; max-height: 500px; height: auto;">
