@@ -48,3 +48,15 @@
         N8 -> N9 -> N4 -> N5 -> N2 -> N6 -> N7 -> N3 -> N1
     
 <img src="images/PostOrderTraversalBTLL.png" alt="PostOrderTraversalInBT" style="max-width: 50%; max-height: 500px; height: auto;">
+
+### Binary Tree - LevelOrder Traversal
+    - Level wise
+
+<img src="images/LevelOrderTraversalBTLL.png" alt="LevelOrderTraversalInBT" style="max-width: 50%; max-height: 500px; height: auto;">
+
+    - Traversal Sequence:
+
+            N1 -> N2 -> N3 -> N4 -> N5 -> N6 -> N7 -> N8 -> N9
+
+
+<img src="images/S_1_LevelOrderTraversalBTLL.png" alt="LevelOrderTraversalInBT" style="max-width: 50%; max-height: 500px; height: auto;">

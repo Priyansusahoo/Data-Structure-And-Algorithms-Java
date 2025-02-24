@@ -48,5 +48,8 @@ public class Main {
 
         System.out.println("\n" + "PostOrder Traversal Sequence -> ");
         bt.postOrder(bt.root);
+
+        System.out.println("\n" + "LevelOrder Traversal Sequence -> ");
+        bt.levelOrder();
     }
 }
