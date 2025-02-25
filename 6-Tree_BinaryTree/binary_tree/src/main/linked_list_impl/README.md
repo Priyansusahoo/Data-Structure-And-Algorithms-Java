@@ -3,8 +3,8 @@
 #### 1. Binary Tree using Linked List:
     - Traverse all nodes
     - Search for a value
-    - Creating a tree
     - Inserting a node
+    - Creating a tree
     - Deleting a node
     - Deletion of Tree
 
@@ -64,3 +64,9 @@
 
 
 <img src="images/S_1_LevelOrderTraversalBTLL.png" alt="LevelOrderTraversalInBT" style="max-width: 30%; max-height: 500px; height: auto;">
+
+## Searching
+
+#### Implements LevelOrder Traversal for searching.
+
+        BinaryTreeLL.java --> search()

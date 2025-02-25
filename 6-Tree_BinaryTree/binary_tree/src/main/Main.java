@@ -51,5 +51,7 @@ public class Main {
 
         System.out.println("\n" + "LevelOrder Traversal Sequence -> ");
         bt.levelOrder();
+
+        bt.search(N9.value);
     }
 }

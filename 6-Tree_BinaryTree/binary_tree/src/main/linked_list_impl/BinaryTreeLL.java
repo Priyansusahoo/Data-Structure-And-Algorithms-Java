@@ -137,4 +137,28 @@ public class BinaryTreeLL {
                 - Remove N8 from the queue: `
          */
     }
+
+    /**
+     * Implements LevelOrder Traversal for searching
+     * Cause it implements queue instead of stack which is best
+     */
+    public void search(String value) { // TC -> O(N) ; SC -> O(N)
+        Queue<BinaryNode> queue = new LinkedList<BinaryNode>(); // TC -> O(1)
+        queue.add(root); // TC -> O(1)
+        while (!queue.isEmpty()) { // TC -> O(N)
+            BinaryNode presentNode = queue.remove(); // TC -> O(1)
+            if (presentNode.value == value) { // TC -> O(1)
+                System.out.println("Value Found " + value + " in tree"); // TC -> O(1)
+                return;
+            } else {
+                if (presentNode.left != null) { // TC -> O(1)
+                    queue.add(presentNode.left); // TC -> O(1)
+                }
+                if (presentNode.right != null) { // TC -> O(1)
+                    queue.add(presentNode.right); // TC -> O(1)
+                }
+            }
+        }
+        System.out.println("Value " + value + " not found in tree"); // TC -> O(1)
+    }
 }
