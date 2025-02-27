@@ -53,5 +53,14 @@ public class Main {
         bt.levelOrder();
 
         bt.search(N9.value);
+
+        bt.insert("N10");
+        bt.insert("N11");
+        bt.insert("N12");
+        bt.insert("N13");
+        bt.insert("N14");
+        bt.insert("N15");
+
+        bt.levelOrder();
     }
 }

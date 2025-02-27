@@ -161,4 +161,33 @@ public class BinaryTreeLL {
         }
         System.out.println("Value " + value + " not found in tree"); // TC -> O(1)
     }
+
+    public void insert(String value) { // TC -> O(N) ; SC -> O(N)
+        BinaryNode newNode = new BinaryNode(); // TC -> O(1)
+        newNode.value = value; // TC -> O(1)
+        if (root == null) { // TC -> O(1)
+            root = newNode;
+            System.out.println(newNode.value + " added as root");
+            return;
+        }
+        Queue<BinaryNode> queue = new LinkedList<BinaryNode>(); // TC -> O(1)
+        queue.add(root); // TC -> O(1)
+        while (!queue.isEmpty()) { // TC -> O(N)
+            BinaryNode presentNode = queue.remove(); // TC -> O(1)
+            if (presentNode.left != null) { // TC -> O(1)
+                queue.add(presentNode.left);
+            } else { // TC -> O(1)
+                presentNode.left = newNode;
+                System.out.println(newNode.value + " inserted successfully at " + presentNode.value + " left reference");
+                return;
+            }
+            if (presentNode.right != null) { // TC -> O(1)
+                queue.add(presentNode.right);
+            } else { // TC -> O(1)
+                presentNode.right = newNode;
+                System.out.println(newNode.value + " inserted successfully at " + presentNode.value + " right reference");
+                return;
+            }
+        }
+    }
 }

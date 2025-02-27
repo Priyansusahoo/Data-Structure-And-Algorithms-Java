@@ -70,3 +70,9 @@
 #### Implements LevelOrder Traversal for searching.
 
         BinaryTreeLL.java --> search()
+
+## Inserting
+
+#### Implements LevelOrder Traversal for inserting.
+
+        BinaryTreeLL.java --> insert()
