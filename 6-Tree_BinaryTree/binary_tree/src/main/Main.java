@@ -62,5 +62,7 @@ public class Main {
         bt.insert("N15");
 
         bt.levelOrder();
+
+        System.out.println("The deepest Node in Binary Tree is " + bt.getDeepestNode().value);
     }
 }

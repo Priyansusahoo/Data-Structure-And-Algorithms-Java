@@ -140,7 +140,7 @@ public class BinaryTreeLL {
 
     /**
      * Implements LevelOrder Traversal for searching
-     * Cause it implements queue instead of stack which is best
+     * levelOrder implemented cause it implements queue instead of stack which is best
      */
     public void search(String value) { // TC -> O(N) ; SC -> O(N)
         Queue<BinaryNode> queue = new LinkedList<BinaryNode>(); // TC -> O(1)
@@ -162,6 +162,9 @@ public class BinaryTreeLL {
         System.out.println("Value " + value + " not found in tree"); // TC -> O(1)
     }
 
+    /**
+     * @param value inserted to the binary tree using levelOrder Traversal, or sets it as root if tree doesn't exist
+     */
     public void insert(String value) { // TC -> O(N) ; SC -> O(N)
         BinaryNode newNode = new BinaryNode(); // TC -> O(1)
         newNode.value = value; // TC -> O(1)
@@ -189,5 +192,29 @@ public class BinaryTreeLL {
                 return;
             }
         }
+    }
+
+    /**
+     * This method is used in deleteNode()
+     * @return the deepest node in a Binary Tree, or null if the tree is empty
+     */
+    public BinaryNode getDeepestNode() { // TC -> O(N) ; SC -> O(N)
+        if (root == null) { // TC -> O(1)
+            return null;
+        }
+        Queue<BinaryNode> queue = new LinkedList<BinaryNode>(); // TC -> O(1)
+        queue.add(root); // TC -> O(1)
+        BinaryNode presentNode = null;
+        while (!queue.isEmpty()) { // TC -> O(N)
+            presentNode = queue.remove(); // TC -> O(1)
+
+            if (presentNode.left != null) { // TC -> O(1)
+                queue.add(presentNode.left);
+            }
+            if (presentNode.right != null) { // TC -> O(1)
+                queue.add(presentNode.right);
+            }
+        }
+        return presentNode; // TC -> O(1)
     }
 }
